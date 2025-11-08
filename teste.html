@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste de Média</title>
+</head>
+<body>
+    <h1>Abra o console para ver a mágica!</h1>
+    <p>Para abrir o console no seu navegador, clique com o botão direito e escolha "Inspecionar", depois vá para a aba "Console".</p>
+
+    <!-- Colando o código JavaScript aqui -->
+    <script>
+        /*
+          Este script pede 4 notas ao usuário, calcula a média,
+          e exibe o resultado no console do navegador.
+        */
+
+        // 1. Use a função prompt() para pedir cada uma das 4 notas
+        // A função Number() converte o texto (string) do prompt em um número
+        const n1 = Number(prompt('Digite a nota 1'));
+        const n2 = Number(prompt('Digite a nota 2'));
+        const n3 = Number(prompt('Digite a nota 3'));
+        const n4 = Number(prompt('Digite a nota 4'));
+
+        // 2. Calcule a média
+        const media = (n1 + n2 + n3 + n4) / 4;
+
+        // 3. Use console.log() para exibir o resultado no console
+        // (É bom exibir a média para que o usuário possa conferir)
+        console.log('A média final do aluno é: ' + media);
+
+        // 4. A lógica de condição com if, else if e else
+        if (media >= 7) {
+          // Média >= 7: "Aprovado!"
+          console.log('Situação: Aprovado!');
+        } else if (media >= 5) {
+          // Média >= 5 (e menor que 7): "Recuperação"
+          console.log('Situação: Recuperação');
+        } else {
+          // Qualquer outra nota (menor que 5): "Reprovado"
+          console.log('Situação: Reprovado');
+        }
+    </script>
+
+</body>
+</html>
